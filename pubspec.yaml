@@ -1,0 +1,30 @@
+name: actrifier
+description: Actor's new films notification tool
+
+publish_to: 'none'
+
+version: 0.6.2+0
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  shared_preferences: ^2.0.0
+  intl: ^0.17.0
+  firebase_core: ^1.0.0
+  firebase_messaging: ^10.0.0
+  http: ^0.13.0
+  network_to_file_image: ^3.0.0
+  path_provider: ^2.0.0
+  package_info: ^2.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  pedantic: ^1.0.0
+
+flutter:
+  uses-material-design: true
