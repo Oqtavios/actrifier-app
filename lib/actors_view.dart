@@ -163,6 +163,7 @@ class _ActorsViewState extends State<ActorsView> {
               smallText: 'Search for your favorite actors and follow them to get notifications about their upcoming movies',
             ) : ListView.builder(
               physics: BouncingScrollPhysics(),
+              cacheExtent: 16384,
               itemCount: App.of(context).subscriptions.length + 1,
               itemBuilder: (context, i) {
                 if (i == 0) {
@@ -215,6 +216,7 @@ class _ActorsViewState extends State<ActorsView> {
                   var searchResults = snapshot.data;
                   return ListView.builder(
                     physics: BouncingScrollPhysics(),
+                    cacheExtent: 16384,
                     itemCount: searchResults!.length + 1,
                     itemBuilder: (context, i) {
                       if (i == 0) {
